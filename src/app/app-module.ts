@@ -1,13 +1,22 @@
 import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { App } from './app';
+import { Cine } from './components/cine_component/cine';
+import { Musica } from './components/musica_component/musica';
+import { Home } from './components/home_component/home';
+import { NotFound } from './components/not_found_component/not_found';
+import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
-    App
+    App,
+    Cine,
+    Musica,
+    Home,
+    NotFound,
   ],
   imports: [
-    BrowserModule
+    BrowserModule, routing
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
