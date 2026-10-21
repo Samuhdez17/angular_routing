@@ -6,6 +6,7 @@ import { Musica } from './components/musica_component/musica';
 import { Home } from './components/home_component/home';
 import { NotFound } from './components/not_found_component/not_found';
 import { routing } from './app.routing';
+import { Menu } from './components/menu_component/menu';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { routing } from './app.routing';
     Musica,
     Home,
     NotFound,
+    Menu
   ],
   imports: [
     BrowserModule, routing
