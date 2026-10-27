@@ -7,23 +7,15 @@ import { Home } from './components/home_component/home';
 import { NotFound } from './components/not_found_component/not_found';
 import { routing } from './app.routing';
 import { Menu } from './components/menu_component/menu';
+import { NumeroDoble } from './components/numero-doble/numero-doble';
 
 @NgModule({
   declarations: [
-    App,
-    Cine,
-    Musica,
-    Home,
-    NotFound,
-    Menu
+    App, Cine, Musica, Home, 
+    NotFound, Menu, NumeroDoble,
   ],
-  imports: [
-    BrowserModule, routing
-  ],
-  providers: [
-    provideBrowserGlobalErrorListeners(),
-    provideClientHydration(),
-  ],
-  bootstrap: [App]
+  imports: [BrowserModule, routing],
+  providers: [provideBrowserGlobalErrorListeners(), provideClientHydration()],
+  bootstrap: [App],
 })
-export class AppModule { }
+export class AppModule {}

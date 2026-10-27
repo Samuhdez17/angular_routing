@@ -4,11 +4,14 @@ import { Home } from './components/home_component/home'
 import { Cine } from './components/cine_component/cine'
 import { Musica } from './components/musica_component/musica'
 import { NotFound } from './components/not_found_component/not_found'
+import { NumeroDoble } from './components/numero-doble/numero-doble'
 
 const appRoutes: Routes = [
             { path:'', component: Home },
             { path:'cine', component: Cine },
             { path:'musica', component: Musica },
+            { path:'doble', component: NumeroDoble },
+            { path:'doble/:numero', component: NumeroDoble },
             { path:'**', component: NotFound }, // SIEMPRE LA ULTIMA RUTA
         ]
 
